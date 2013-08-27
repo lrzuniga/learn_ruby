@@ -7,7 +7,7 @@
 # The first time you run the tests, you should get an error saying "cannot load such file -- hello.rb (LoadError)"
 # That error is coming from the line below (line #10)–
 # it means get a file with the name "hello.rb" in the current directory.
-require "hello.rb"
+require "./hello.rb"
 # To stop this error from being thrown we need to create the file:
 # $ touch hello.rb 
 
@@ -15,7 +15,7 @@ require "hello.rb"
 # Let's keep this in mind while we go through the next little bit of code.
 
 # The line below is not important to us (line #18),
-describe "the hello function" do
+describe "the hello function - " do
   # neither is #20,
   it "says hello" do
     # but this is the important part. 
