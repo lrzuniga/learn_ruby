@@ -17,3 +17,7 @@ end
 def first_word(phrase)
   phrase.split[0]
 end
+
+def titleize(word)
+  #word.gsub(/\b\w/){ $&.upcase } - doesnt work for "war and peace"
+end
